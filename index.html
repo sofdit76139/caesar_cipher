@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caesar.css">
+</head>
+    <body>
+        <div id="container">
+            <div id="cipher-header">
+                <h1>Caesar Cipher</h1>
+            </div>
+            <div id="user-instructions">
+                <p>The "Caesar Cipher" lets you encode any string you'd like. All you need to do is enter some text in the field below, then click "Convert".</p>
+                <p>Your text will be converted.</p>
+            </div>
+            <div id="user-entry">
+                <textarea id="user-input" placeholder="Enter some text here"></textarea>
+                <p>Specify a shift factor:</p>
+                <input id="shift-factor-input" type="text" placeholder="Enter a number"></input>
+                <p>Please note: you can only enter a shift factor between -25 and 25. A shift factor of 0 has no effect. Other factors are not allowed.</p>
+                <button id="convert-text">Convert</button>
+                <button id="reset-button">Reset</button>
+            </div>
+            <div id="converted-text-header">
+               <h2>Here's the converted text:</h2> 
+            </div>
+            <div id="converted-text">
+            </div>
+        </div>
+        <script src="caesar.js" async></script>
+    </body>
+</html>
