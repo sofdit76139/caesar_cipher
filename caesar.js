@@ -59,11 +59,11 @@ function disableConvertButton () {
     } else if (parseInt(document.querySelector("#shift-factor-input").value) < -25 || parseInt(document.querySelector("#shift-factor-input").value) > 25) {
         document.querySelector("#convert-text").disabled = true;
         document.querySelector("#shift-factor-input").value = "";
-        alert("The shift factor should be between -25 and 25.")
+        alert("The shift factor should be between -25 and 25.");
     } else if (isNaN(checkForNumber)) { 
         document.querySelector("#convert-text").disabled = true;
         document.querySelector("#shift-factor-input").value = "";
-        alert("The shift factor should be a NUMBER between -25 and 25. Letters and other characters are not allowed.")
+        alert("The shift factor should be a NUMBER between -25 and 25. Letters and other characters are not allowed.");
     } else {
         document.querySelector("#convert-text").disabled = false;
     }
